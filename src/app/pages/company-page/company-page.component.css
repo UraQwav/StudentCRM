@@ -1,0 +1,31 @@
+.company{
+    display: flex;
+    flex-wrap: wrap;
+}
+.company-items{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin:2rem;
+    border-radius: 10px;
+}
+.company-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 320px;
+    height: 240px;
+    color: #292929;
+}
+.company-name{
+    font-size: 1.5rem;
+}
+.company-address{
+    font-size: 0.9rem;
+    margin:1rem;
+    color: #707070;
+}

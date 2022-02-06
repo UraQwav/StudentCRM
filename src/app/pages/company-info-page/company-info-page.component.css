@@ -1,0 +1,90 @@
+.student-shortInfo{
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.student-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 170px;
+    overflow: hidden;
+}
+.student-img img{
+    width: 100%;
+}
+.student-content-short{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.student-edit-cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.student-name{
+    margin: 1rem 2rem;
+    font-size: 1.7rem;
+}
+.student-curs{
+    margin: 1rem 2rem;
+    font-size: 1.4rem;   
+    color: #797979;
+}
+.student-events{
+    width: 100%;
+}
+.event-buttons{
+    display: flex;
+    width: 50px;
+    padding: 0.5rem;
+}
+.save-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    color:#fff;
+    background: #8527ff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.edit-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    color:#fff;
+    background: #8527ff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.delete-button{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    margin-left: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    color:#fff;
+    background: #ff275d;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dialog{
+    display:flex;
+    flex-direction: column;
+}
+.student-info{
+    margin: 3rem 7rem;
+}

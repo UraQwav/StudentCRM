@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Изменить данные о студенте</h1>
+<div mat-dialog-content class="dialog">
+    <mat-form-field class="company-create-example-full-width">
+        <mat-label>ФИО</mat-label>
+        <input [(ngModel)]="name" matInput placeholder="фио" >
+    </mat-form-field>    
+    <mat-form-field class="company-create-example-full-width">
+        <mat-label>курс</mat-label>
+        <input [(ngModel)]="kurs" matInput placeholder="курс"  >
+    </mat-form-field>    
+    <mat-form-field class="company-create-example-full-width">
+        <mat-label>специальность</mat-label>
+        <input [(ngModel)]="spec" matInput placeholder="специальность"  >
+    </mat-form-field>    
+    <div class="save-button" (click)="saveData();">Сохранить</div>
+</div>

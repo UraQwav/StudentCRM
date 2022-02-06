@@ -1,0 +1,24 @@
+<div class="students">
+    <div class="students-small-info-container">
+        <div class="search">
+            <mat-form-field class="company-create-example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="name"(input)="search();" [(ngModel)]="name">
+            </mat-form-field>
+            <div class="search-button" (click)="search();">
+                <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+            </div>
+        </div>
+        <div class="student-name-search">
+            <div *ngFor="let student of students; let i = index;" class="student-name">
+                <a class="student-link" [routerLink]="['/students/here/'+i]">{{student.name}}</a>
+                <div class="delete-button" (click)="deleteStudent(i);">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="student-full-info">
+        <router-outlet></router-outlet>
+    </div>
+</div>

@@ -1,0 +1,60 @@
+.company-create-in-page{
+    height: 90vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-image: url('../../../assets/1.png');
+ 
+     background-repeat: no-repeat;
+     background-size: 100%;
+ 
+     /* background: #0f0c29;  fallback for old browsers */
+     /* background: -webkit-linear-gradient(to left, #24243e, #302b63, #0f0c29);  Chrome 10-25, Safari 5.1-6 */
+     /* background: linear-gradient(to left, #24243e, #302b63, #0f0c29); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+ 
+ .company-create{
+     background: rgba(255, 255, 255);
+     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+     border-radius: 20px;
+     width: 400px;
+ }
+ ::ng-deep .mat-form-field-label {
+     /*change color of label*/
+     color: #707070 !important;
+    }
+   
+    ::ng-deep.mat-form-field-underline {
+     /*change color of underline*/
+     background-color: #292929 !important;
+   } 
+ .company-create-title{
+     text-align: center;
+     font-size: 1.5rem;
+     margin: 0.7rem;
+ }
+ .company-create-form{
+     margin: 5% 10%;
+     display: flex;
+     flex-direction: column;
+ }
+ .company-create-form input[type="submit"]{
+     padding: 0.5rem 0.75rem;
+     background: #302b63; 
+     border-radius: 10px;
+     color: #fff;
+     cursor: pointer;
+     border: 0;
+     outline: none;
+     text-align: center;
+     width: 100px;
+ }
+ 
+ 
+ @media only screen and (max-width: 600px) {
+     .company-create{
+         width: 330px;
+         height: 260px;
+     }
+ }
+ 

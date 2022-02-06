@@ -1,0 +1,71 @@
+<div class="student-info">
+    <div class="student-shortInfo">
+        <div class="student-img">
+            <img src="assets/student.png" alt="">
+        </div>
+        <div class="student-content-short">
+            <div class="student-edit-cont">
+                <div class="student-name">{{student.name}}</div>
+                <div class="edit-button" (click)="editStudent();">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                </div>
+            </div>
+            <div class="student-edit-cont">
+                <div class="student-curs">Специальность {{student.spec}}</div>
+                <!-- <div class="edit-button">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                </div> -->
+            </div>
+            <div class="student-edit-cont">
+                <div class="student-curs">{{student.kurs}} курс</div>
+                <!-- <div class="edit-button">
+                    <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+    <div class="added-events">
+        <div class="edit-button" (click)="addStudentEvent();">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">add</mat-icon>
+        </div>
+    </div>
+    <div class="student-events">
+        <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8"
+            style="margin-top:2rem; width: 100%;">
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+            <ng-container matColumnDef="company">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> company </th>
+                <td mat-cell *matCellDef="let element"> {{element.company}} </td>
+            </ng-container>
+            <!-- Weight Column -->
+            <ng-container matColumnDef="date">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> date </th>
+                <td mat-cell *matCellDef="let element"> {{element.date}}  </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="id">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> id </th>
+                <td mat-cell *matCellDef="let element"> {{element.id}}
+                    <div class="event-buttons">
+                        <div class="edit-button" (click)="editEvent(element);">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+                        </div>
+                        <div class="delete-button" (click)="deleteEvent(element);">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon">delete</mat-icon>
+                        </div>
+                    </div>
+                 </td>
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+
+    </div>
+</div>

@@ -1,0 +1,89 @@
+.students{
+    display: flex;
+    justify-content: flex-start;
+    /* background: #292929; */
+}
+.students-small-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 90vh;
+    border-right: 1px solid rgba(155, 155, 155, 0.452);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+.student-full-info{
+    width: 75%;
+    margin: 2rem;
+}
+.student-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.452);
+    /* background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+.student-name:hover .delete-button{
+    background: #ff275d;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+}
+.student-link{
+    display: flex;
+    color: #292929;
+    padding: 0.7rem 1rem;
+    width: 60%;
+}
+.delete-button{
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    margin: 0.5rem 1.2rem;
+    padding: 0.7rem 1.2rem;
+    color:#fff;
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search{
+    display: flex;
+    position: fixed;
+}
+.student-name-search{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.search-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem 1.2rem;
+    padding: 0.7rem 1.2rem;
+    color:#fff;
+    width: 30px;
+    height: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #27ff7a;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+    margin-right: 0;
+}
+::ng-deep .mat-form-field-label {
+    /*change color of label*/
+    color: #707070 !important;
+   }
+  
+   ::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: #292929 !important;
+  } 

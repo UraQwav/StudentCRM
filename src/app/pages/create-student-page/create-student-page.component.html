@@ -1,0 +1,20 @@
+<div class="company-create-in-page">
+    <div class="company-create">
+        <form class="company-create-form" [formGroup]="Form" novalidate (ngSubmit)="create()">
+            <div class="company-create-title">Create student</div>
+            <mat-form-field class="company-create-example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="name" formControlName="name">
+            </mat-form-field>
+            <mat-form-field class="company-create-example-full-width">
+                <mat-label>Kurs</mat-label>
+                <input matInput placeholder="kurs"  formControlName="kurs">
+            </mat-form-field>  
+            <mat-form-field class="company-create-example-full-width">
+                <mat-label>Spec</mat-label>
+                <input matInput placeholder="spec"  formControlName="spec">
+            </mat-form-field>   
+            <input type="submit" [disabled]="Form.invalid" value="Create" name="Create">                        
+        </form>
+    </div>
+</div>

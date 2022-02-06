@@ -1,0 +1,12 @@
+<h1 mat-dialog-title>Изменить данные о компании</h1>
+<div mat-dialog-content class="dialog">
+    <mat-form-field class="company-create-example-full-width">
+        <mat-label>Name</mat-label>
+        <input [(ngModel)]="name" matInput placeholder="Name" >
+    </mat-form-field>    
+    <mat-form-field class="company-create-example-full-width">
+        <mat-label>address</mat-label>
+        <input [(ngModel)]="address" matInput placeholder="address" >
+    </mat-form-field>      
+    <div class="save-button" (click)="saveData();">Сохранить</div>
+</div>

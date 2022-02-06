@@ -1,0 +1,28 @@
+.header{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+    background: #8527ff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.header-logo{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+}
+.header-container div{
+    margin-left: 1rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}
+.header-create-items{
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+}

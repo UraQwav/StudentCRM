@@ -1,0 +1,8 @@
+<div class="company">
+    <div class="company-items" *ngFor="let company of companies; let i = index;">
+        <a class="company-links" [routerLink]="['/companies/here/'+ i]">
+            <div class="company-name">{{company.name}}</div>
+            <div class="company-address">{{company.address}}</div>
+        </a>
+    </div>
+</div>
